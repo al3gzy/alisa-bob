@@ -17,7 +17,7 @@ def alisa_igra(niz, zbirA, prethodniA, zbirB, prethodniB):
             if niz[i] > max_val and niz[i] % 2 != prethodniA % 2:
                 max_val = niz[i]
                 index = i
-        if index == -1:  # No valid number found, return zbirA
+        if index == -1:
             return zbirA, zbirB
         zbirA += max_val
         prethodniA = max_val
