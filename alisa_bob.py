@@ -41,7 +41,7 @@ def bob_igra(niz, zbirA, prethodniA, zbirB, prethodniB):
             if niz[i] > max_val and niz[i] % 2 != prethodniB % 2:
                 max_val = niz[i]
                 index = i
-        if index == -1:  # No valid number found, return zbirB
+        if index == -1: 
             return zbirA, zbirB
         zbirB += max_val
         prethodniB = max_val
